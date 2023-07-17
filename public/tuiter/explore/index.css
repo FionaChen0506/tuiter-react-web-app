@@ -254,8 +254,8 @@
 
   .square-image-container {
     position: relative;
-    width: 55%;
-    padding-bottom: 55%; /* Creates a square shape based on the width */
+    width: 80%;
+    padding-bottom: 80%; /* Creates a square shape based on the width */
   }
   
   .image-content {
