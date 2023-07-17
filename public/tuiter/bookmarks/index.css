@@ -1,0 +1,125 @@
+/* CSS styles */
+:root {
+    --background-color: white;
+    --text-color: black;
+    --border-color: lightgray;
+    --padding-size: 12px;
+}
+
+/* Container */
+.wd-post {
+    background-color: white;
+    color: var(--text-color);
+    border: 0.8px solid var(--border-color);
+    padding: 12px;
+}
+
+
+/* Back button*/
+.wd-back-button {
+    display: inline-block;
+    margin-right: 10px; /* Adjust the margin as needed */
+    color: black;
+    text-decoration: none; /* Remove underline if desired */
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
+.wd-bookmark-text {
+    display: inline-block;
+    color: black; 
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+
+.wd-post-tuit{
+    display:flex;
+    padding:12px;
+}
+
+.wd-post-tuit a{
+    color: #1b94e5;
+    text-decoration: none;
+}
+
+.wd-post-tuit a:hover {
+    text-decoration:underline
+}
+
+/* Avatar */
+.wd-post-avatar {
+    border-radius: 50%;
+    height: 49px;
+    width: 49px;
+    margin-right: 10px;
+}
+/* Header */
+.wd-post__header{
+    display:flex;
+}
+.wd-post__author {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-weight: 700;
+    margin-right: 5px;
+    color:#14171a;
+}
+
+.wd-post__author-account{
+    color:#5b7083;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.wd-post__time{
+    margin-left: 5px;
+    color:#657786;
+    font-size: 15px;
+}
+
+
+/* Body */
+.wd-post__body{
+    margin-left:10px;
+    color:black;
+}
+.wd-post__body img {
+    margin-top: 5px;
+    width: 450px;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+/* Footer */
+
+.wd-post__footer {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 15px;
+}
+
+.wd-post__footer span {
+    margin-right:5px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+/* Additional classes */
+
+.wd-post__badge {
+    font-size: 14px !important;
+    color: var(--text-color);
+    margin-right: 5px;
+    border-radius: 50%;
+    padding: 3px;
+    background-color: var(--background-color);
+}
+
+.wd-post__headerDescription {
+    margin-bottom: 10px;
+    font-size: 15px;
+}

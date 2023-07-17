@@ -1,0 +1,207 @@
+.wd-container {
+    display: flex;
+}
+
+.wd-sidebar {
+    width: 275px;
+    padding: 20px;
+}
+
+.wd-sidebar-menu {
+    list-style-type: none; /* delete the dots before each navigation row */
+    padding: 0;
+    margin: 0;
+}
+
+.wd-sidebar-menu li {
+    margin-bottom: 15px;
+}
+
+.wd-sidebar-menu a {
+    text-decoration: none;
+    color: #1da1f2;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.wd-content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Search bar styles */
+.wd-search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.wd-search-input-wrapper {
+    position: relative;
+    flex: 1;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.wd-search-input {
+    width: 100%;
+    height: 45px;
+    position: relative;
+    padding-left: 40px; /* Adjust the padding to create space for the search icon */
+    background-color: #e9e9e9;
+    color: rgb(140, 139, 139);
+    border: 1px solid #e9e9e9;
+    border-radius: 20px;
+    font-size: 16px;
+}
+.wd-search-input-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #555;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.wd-search-icon {
+    color: #555;
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+.wd-settings-icon {
+    color: #555;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Tabs styles */
+.wd-tabs {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.wd-tab {
+    margin-right: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #999;
+    cursor: pointer;
+    /*transition: color 0.3s;*/
+    position: relative; /*new*/
+}
+
+/*new*/
+.wd-tab .wd-tab-label {
+    display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.wd-tab:hover .wd-tab-label {
+    color: #1da1f2;
+}
+
+.wd-selected-tab .wd-tab-label {
+    color: #1da1f2;
+    border-color: #1da1f2;
+}
+/*
+.wd-tab:hover {
+    color: #1da1f2;
+}
+
+.wd-selected-tab {
+    color: black;
+}*/
+
+
+
+/* Image container */
+.wd-image-container {
+    margin-bottom: 20px;
+    width: 500px;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+
+.wd-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wd-image-text-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 1; /* Ensure text is on top of the mask */
+}
+
+/*the mask shawdows part of the image and it can highlights the text.*/
+.wd-gradient-mask {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 10%, rgba(0, 0, 0, 0) 100%);
+}
+
+/* Tuits styles */
+.wd-tuits {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.wd-tuit {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.wd-tuit-content-wrapper {
+    flex: 1;
+    margin-left: 10px;
+    position: relative;
+}
+
+.wd-tuit-trending {
+    color: #555;
+    font-size: 14px;
+}
+
+.wd-tuit-title {
+    font-size: 17px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.wd-tuit-numbers {
+    font-size: 14px;
+    color: #555;
+}
+
+.wd-tuit-ellipsis {
+    position: absolute;
+    font-size: 18px;
+    margin-right: 10px;
+    color: #555;
+    right: 20px;
+}
