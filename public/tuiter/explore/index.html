@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="../../vendors/bootstrap/bootstrap.min.css" 
+        rel="stylesheet"/>
+
+        <link href="../../vendors/fontawesome/css/all.css" 
+                rel="stylesheet"/>
+
+        <link href="../styles.css"
+                rel="stylesheet"/>   
+
+        <link href="./index.css"
+                rel="stylesheet"/>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <!-- Content of the left column -->
+                <div class="col mt-3">
+                    <ul class="list-group">
+                        <a href="../home.html" class="list-group-item list-group-item-action">Home</a>
+                        <a href="../explore.html" class="list-group-item list-group-item-action active">Explore</a>
+                        <a href="../notifications.html" class="list-group-item list-group-item-action">Notifications</a>
+                        <a href="../messages.html" class="list-group-item list-group-item-action">Messages</a>
+                        <a href="../bookmarks/bookmarks-css.html" class="list-group-item list-group-item-action">Bookmarks</a>
+                        <a href="../lists.html" class="list-group-item list-group-item-action">Lists</a>
+                        <a href="../profile.html" class="list-group-item list-group-item-action">Profile</a>
+                        <a href="../reply.html" class="list-group-item list-group-item-action">Reply</a>
+                    </ul>
+                    <a href="../tuit.html">
+                        <button class="btn btn-primary w-100 mt-3 rounded-pill">Tuit</button>
+                    </a>
+                </div>
+                
+                <!-- Content of the center column -->
+                <div class="col-8">
+                    <div class="container">
+                        <div class="row mt-3">
+                          <!-- Search bar -->
+                          <div class="col-md-11">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control rounded-pill ps-5" placeholder="Search Tuiter">
+                                <span class="input-group-text position-absolute" style="top: 50%; transform: translateY(-50%);">
+                                    <i class="fas fa-search fa-lg"></i></span>
+                            </div>
+                          </div>
+                          <div class="col-md-1 text-end">
+                            <i class="fas fa-cog text-primary fa-2x"></i>
+                          </div>
+                        </div>
+                        
+                        <!-- Tabs -->
+                        <ul class="nav nav-tabs mt-3" id="wd-tabs" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="for-you-tab" data-bs-toggle="tab" href="for-you.html" role="tab" aria-controls="for-you" aria-selected="true">For You</a>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="trending-tab" data-bs-toggle="tab" href="trending.html" role="tab" aria-controls="trending" aria-selected="false">Trending</a>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="news-tab" data-bs-toggle="tab" href="news.html" role="tab" aria-controls="news" aria-selected="false">News</a>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="sports-tab" data-bs-toggle="tab" href="sports.html" role="tab" aria-controls="sports" aria-selected="false">Sports</a>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="entertainment-tab" data-bs-toggle="tab" href="entertainment.html" role="tab" aria-controls="entertainment" aria-selected="false">Entertainment</a>
+                          </li>
+                        </ul>
+                        
+                        <!-- Image container -->
+                        <div class="row mt-3">
+                            <div class="col">
+                              <div class="card position-relative">
+                                <img src="../../images/coldplay1.jpg" class="card-img-top" alt="Image">
+                                <div class="card-img-overlay"></div>
+                                <div class="card-body">
+                                  <h3 class="card-title wd-image-text-overlay">Coldplay: A Head Full of Dreams</h3>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Tuits List -->
+                        <div class="row">
+                            <div class="col-12">
+                            <div class="card">
+                                <div class="row g-0">
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                    <h3 class="card-title">NEU Vancouver</h3>
+                                    <span class="badge bg-primary">Trending in Canada</span>
+                                    <span class="card-text">10.2K Tuits</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="square-image-container">
+                                    <div class="image-content" style="background-image: url('../../images/northeastern.jpg');"></div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        
+                            <div class="col-12">
+                            <div class="card mb-3">
+                                <div class="row g-0">
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                    <h3 class="card-title">Spider-Man: Across the Spider-Verse</h3>
+                                    <span class="badge bg-primary">Trending in Movies</span>
+                                    <span class="card-text">26.4K Tuits</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="square-image-container">
+                                    <div class="image-content" style="background-image: url('../../images/tuit-image2.jpg');"></div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                          
+                    </div>
+                </div>          
+                          
+                          
+                      
+                
+                <div class="col">
+                    <!-- Content of the right column -->
+                    <h2>Explore Details</h2>
+                    <p>This is the right column content.</p>
+                </div>
+            </div>
+        </div>
+    
+        
+            <!--div class="wd-content">
+                <div class="wd-search-bar">
+                    <div class="wd-search-input-wrapper">
+                        <input type="text" class="wd-search-input" placeholder="Search Tuiter">
+                        <span class="wd-search-input-icon">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </div>
+                    <span class="wd-settings-icon">
+                        <i class="fas fa-cog"></i>
+                    </span>
+                </div>
+                
+        
+                <ul class="wd-tabs">
+                    <li class="wd-tab wd-selected-tab">
+                        <label class="wd-tab-label">
+                            <span>For You</span>
+                        </label>
+                    </li>
+                    <li class="wd-tab"><span>Trending</span></li>
+                    <li class="wd-tab"><span>News</span></li>
+                    <li class="wd-tab"><span>Sports</span></li>
+                    <li class="wd-tab"><span>Entertainment</span></li>
+                </ul>
+        
+                <div class="wd-image-container">
+                    <img src="../images/coldplay1.jpg" alt="Image">
+                    <h3 class="wd-image-text-overlay">Coldplay: A Head Full of Dreams</h3>
+                    <div class="wd-gradient-mask"></div> 
+                </div>
+                
+        
+                <ul class="wd-tuits">
+                    <li class="wd-tuit">
+                        <div class="wd-tuit-content-wrapper">
+                            <span class="wd-tuit-ellipsis">...</span>
+                            <span class="wd-tuit-trending">Trending in Canada</span>
+                            <h3 class="wd-tuit-title">NEU Vancouver</h3>
+                            <span class="wd-tuit-numbers">10.2K Tuits</span>
+                        </div>
+                    </li>
+                    <li class="wd-tuit">
+                        <div class="wd-tuit-content-wrapper">
+                            <span class="wd-tuit-ellipsis">...</span>
+                            <span class="wd-tuit-trending">Trending in Movies</span>
+                            <h3 class="wd-tuit-title">Spider-Man: Across the Spider-Verse</h3>
+                            <span class="wd-tuit-numbers">26.4K Tuits</span>
+                        </div>
+                    </li>
+                    <li class="wd-tuit">
+                        <div class="wd-tuit-content-wrapper">
+                            <span class="wd-tuit-ellipsis">...</span>
+                            <span class="wd-tuit-trending">Trending in News</span>
+                            <h3 class="wd-tuit-title">CBC News</h3>
+                            <span class="wd-tuit-numbers">9.7K Tuits</span>
+                        </div>
+                    </li>
+                    <li class="wd-tuit">
+                        <div class="wd-tuit-content-wrapper">
+                            <span class="wd-tuit-ellipsis">...</span>
+                            <span class="wd-tuit-trending">Trending in Local</span>
+                            <h3 class="wd-tuit-title">BC Summer</h3>
+                            <span class="wd-tuit-numbers">5.2K Tuits</span>
+                        </div>
+                    </li>
+                </ul>
+                
+            </div>
+        </div-->
+          
+
+    </body>
+</html>
+    
+    
+    
