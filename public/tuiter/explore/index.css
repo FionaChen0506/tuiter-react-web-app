@@ -85,16 +85,18 @@
     padding: 0;
     margin-bottom: 20px;
     display: flex;
+    position: relative;
 }
 
 .wd-tab {
-    margin-right: 30px;
+    margin-right: 50px;
     font-weight: bold;
     font-size: 16px;
     color: #999;
     cursor: pointer;
     /*transition: color 0.3s;*/
     position: relative; /*new*/
+    width:65%
 }
 
 /*new*/
@@ -117,8 +119,9 @@
 /* Image container */
 .wd-image-container {
     margin-bottom: 20px;
-    width: 500px;
-    height: 350px;
+    margin-left: 20px;
+    width: 90%;
+    height: 30%;
     overflow: hidden;
     position: relative;
 }
@@ -153,7 +156,7 @@
 .wd-tuits {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin-left: 20px;
 }
 
 .wd-tuit {
