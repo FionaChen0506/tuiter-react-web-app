@@ -89,7 +89,7 @@
 }
 
 .wd-tab {
-    margin-right: 50px;
+    margin-right: 40px;
     font-weight: bold;
     font-size: 16px;
     color: #999;
@@ -119,8 +119,9 @@
 /* Image container */
 .wd-image-container {
     margin-bottom: 20px;
-    margin-left: 20px;
-    width: 90%;
+    margin-left: 0;
+    margin-right: 0;
+    width: 92%;
     height: 30%;
     overflow: hidden;
     position: relative;
