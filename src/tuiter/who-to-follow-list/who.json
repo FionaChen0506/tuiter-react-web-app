@@ -1,0 +1,20 @@
+[
+    {
+      "_id": 123,
+      "userName": "Spider-Man",
+      "handle": "spiderman",
+      "avatarIcon": "avatar-spiderman.jpg"
+    },
+    {
+      "_id": 234,
+      "userName": "Gwen Stacy",
+      "handle": "hereisgwen",
+      "avatarIcon": "avatar-gwen.jpg"
+    },
+    {
+      "_id": 345,
+      "userName": "MaryJane",
+      "handle": "thisisMJ",
+      "avatarIcon": "avatar-mj.jpg"
+    }
+]

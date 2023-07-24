@@ -1,0 +1,10 @@
+[{ "_id": 123, "topic": "Peter Parker", "userName": "Peter Parker",
+   "title": "Tesla CyberTruck lands on Mars and picks up the Curiosity rover on its 6' bed",
+   "time": "2h",   "image": "tuit-image3.jpg" },
+ { "_id": 234, "topic": "Space",   "userName": "Spider-Man",
+   "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
+   "time": "3h",   "image": "tuit-image4.jpg" },
+ { "_id": 345, "topic": "Energy",  "userName": "Gwen Stacy",
+   "title": "Gwen Stacy's Green Commute: Tesla FSD revolutionizes transportation",
+   "time": "4d",   "image": "tuit-image5.jpg" }
+]
