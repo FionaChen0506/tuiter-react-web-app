@@ -1,0 +1,161 @@
+/* CSS styles */
+:root {
+    --background-color: white;
+    --text-color: black;
+    --border-color: lightgray;
+    --padding-size: 13px;
+}
+
+/* Container */
+.wd-post {
+    background-color: white;
+    color: var(--text-color);
+    border: 0.8px solid var(--border-color);
+    padding: 12px;
+}
+
+
+/* Back button*/
+.wd-back-button {
+    display: inline-block;
+    margin-right: 10px;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
+.wd-bookmark-text {
+    display: inline-block;
+    color: black; 
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+.wd-post-tuit{
+    display:flex;
+    padding:12px;
+}
+
+.wd-post-tuit a{
+    color: #1b94e5;
+    text-decoration: none;
+}
+
+.wd-post-tuit a:hover {
+    text-decoration:underline
+}
+
+/* Avatar */
+.wd-post-avatar {
+    border-radius: 50%;
+    height: 49px;
+    width: 49px;
+    margin-right: 10px;
+}
+/* Header */
+.wd-post__header{
+    display:flex;
+}
+.wd-post__author {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-weight: 700;
+    margin-right: 5px;
+    color:#14171a;
+}
+
+.wd-post__author-account{
+    color:#5b7083;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.wd-post__time{
+    margin-left: 5px;
+    color:#657786;
+    font-size: 15px;
+}
+
+.wd-post__combined-icon {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .wd-post__check-icon {
+    width: 9px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .wd-post__certificate-icon {
+    display: block;
+    margin-top: 1px;
+    margin-bottom: -2px;
+  }
+  
+  
+.wd-footer-container {
+    margin-left: 10.2%;
+}
+
+.wd-footer-red-heart {
+    color:rgb(236, 6, 6);
+}
+/* Body */
+.wd-post__body {
+    margin-left: 10px;
+    /* margin-right: 5%; */
+    color: black;
+}
+
+.wd-post__container {
+    position: relative;
+    width: 600px;
+    height: 480px;
+    border-radius: 20px;
+    border: 0.8px solid;
+    border-color: lightgray;
+    overflow: hidden;
+}
+
+.wd-post__image {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.wd-post__body-text {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #728493;
+    line-height: 1.2;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.wd-post__body-title{
+    color:black;
+    font-size:18px;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+.wd-post__body-link{
+    color: #728493;
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: -webkit-box;
+}
+
+
+
+
