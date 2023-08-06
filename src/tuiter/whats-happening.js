@@ -1,4 +1,5 @@
-import {createTuit} from "./reducers/tuits-reducer";
+//import {createTuit} from "./reducers/tuits-reducer";
+import {createTuitThunk} from "./services/tuits-thunks";
 import {useDispatch} from "react-redux";
 import React, {useState} from "react";
 // Import the required icon components
@@ -20,7 +21,8 @@ const WhatsHappening = () => {
    const newTuit = {
      tuit: whatsHappening
    }
-   dispatch(createTuit(newTuit));
+   //dispatch(createTuit(newTuit));
+   dispatch(createTuitThunk(newTuit));
    setWhatsHappening("");
  }
  return (
