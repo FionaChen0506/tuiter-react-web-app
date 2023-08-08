@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import { AiOutlineRetweet, AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import { FiShare, FiThumbsDown } from "react-icons/fi";
 import { updateTuitThunk } from "../services/tuits-thunks";
+import {PiThumbsDownDuotone, PiThumbsDownFill} from "react-icons/pi"
 
 
 const TuitStats = ({ tuit}) => {
@@ -11,6 +12,22 @@ const TuitStats = ({ tuit}) => {
     // const handleLikeToggle = () => {
     //     dispatch({ type: 'tuits/toggleLike', payload: { tuitId: tuit._id } });
     //   };
+    const handleLikeToggle = () => {
+      const updatedTuit = {
+          ...tuit,
+          liked : true,
+          likes : tuit.likes + 1,
+      };
+      dispatch(updateTuitThunk(updatedTuit))
+  }
+  const handleDislikeToggle = () => {
+    const updatedTuit = {
+        ...tuit,
+        disliked : true,
+        dislikes : tuit.dislikes + 1,
+    };
+    dispatch(updateTuitThunk(updatedTuit))
+}
 
   return (
     <div className="wd-footer-container">
@@ -29,19 +46,15 @@ const TuitStats = ({ tuit}) => {
           <span className="ms-1">{tuit.likes}</span>
         </div> */}
 
-          <div className="col-2">
-                <FaHeart
+          <div className="col-2" onClick={handleLikeToggle}>
+                {tuit.liked && <AiFillHeart className='wd-footer-red-heart'/>}
+                {!tuit.liked && <AiOutlineHeart />}
+                {/* <FaHeart
                   className="text-danger ms-3"
                   onClick={() =>
                     dispatch(updateTuitThunk({ ...tuit, likes: tuit.likes + 1 }))
                   }
-                /> 
-                {/* {tuit.liked ? <AiFillHeart
-                  className="text-danger"
-                  onClick={() =>
-                    dispatch(updateTuitThunk({ ...tuit, likes: tuit.likes + 1 }))
-                  }
-                />  : <AiOutlineHeart />} */}
+                />  */}
                 <span className="ms-1">{tuit.likes}</span>
           </div>
 
@@ -51,18 +64,21 @@ const TuitStats = ({ tuit}) => {
                     <span>{tuit.likes}</span>
           </button>
        */}
-      <div className="col-2">
-        <FiThumbsDown className="ms-3"
+      <div className="col-2" onClick={handleDislikeToggle}>
+        {/* <FiThumbsDown className="ms-3"
             onClick={() =>
               dispatch(updateTuitThunk({ ...tuit, dislikes: tuit.dislikes + 1 }))
             }
-        /> 
+        />  */}
+
+        {tuit.disliked && <PiThumbsDownFill />}
+        {!tuit.disliked && <PiThumbsDownDuotone/>}
         <span className="ms-1">{tuit.dislikes}</span>
       </div>
 
 
-      <div className="col-2">
-        <FiShare className="ms-4"/>
+      <div className="col-3">
+        <FiShare className="ms-1"/>
       </div>
     </div>
     </div>

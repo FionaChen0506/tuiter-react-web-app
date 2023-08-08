@@ -1,4 +1,5 @@
 import React from "react";
+import tuitsArray from './tuits.json';
 const TuitSummaryItem = (
  {
    tuit = {
@@ -15,7 +16,7 @@ const TuitSummaryItem = (
   <li className="list-group-item">
    <div className="row">
      <div className="col-10">
-       <div>{tuit.userName} · {tuit.time}</div>
+       <div>{tuit.handle} · {tuit.time}</div>
        <div className="fw-bolder">{tuit.topic}</div>
        <div>{tuit.title}</div>
      </div>

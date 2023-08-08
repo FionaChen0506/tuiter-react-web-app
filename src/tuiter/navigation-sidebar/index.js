@@ -34,7 +34,7 @@ const NavigationSidebar = () => {
           Register
         </NavLink>}
      {/* {currentUser && <Link className="list-group-item" to="/tuiter/profile"> Profile </Link>} */}
-    {currentUser &&         <NavLink
+     {currentUser &&         <NavLink
           className="list-group-item"
           activeClassName="active"
           to="/tuiter/profile"

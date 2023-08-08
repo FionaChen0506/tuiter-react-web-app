@@ -11,6 +11,20 @@ export const login = async ({ username, password }) => { // for passing credenti
  return user;
 };
 
+// export const login = async ({ username, password }) => {
+//     try {
+//       console.log('Login request sent:', username, password);
+//       const response = await api.post(`${USERS_URL}/login`, { username, password });
+//       const user = response.data;
+//       console.log('Login response:', user);
+//       return user;
+//     } catch (error) {
+//       console.error('Login error:', error);
+//       throw error;
+//     }
+//   };
+  
+
 export const logout = async () => {
     const response = await api.post(`${USERS_URL}/logout`);
     return response.data;
@@ -23,7 +37,8 @@ export const profile = async () => {
 };
 
 export const updateUser = async (user) => {
-    const response = await api.put(`${USERS_URL}/${user._id}`, user);
+    //const response = await api.put(`${USERS_URL}/${user._id}`, user);
+    const response = await api.put(`${USERS_URL}`, user);
     return response.data;
 };
 

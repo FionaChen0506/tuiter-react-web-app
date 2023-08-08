@@ -9,14 +9,30 @@ function LoginScreen() {
  const navigate = useNavigate();
  const dispatch = useDispatch();
 
- const handleLogin = async () => {
+//  const handleLogin = async () => {
+//   try {
+//     await dispatch(loginThunk({ username, password }));
+//     navigate("/tuiter/profile");
+//   } catch (e) {
+//     alert(e);
+//   }
+//  };
+
+const handleLogin = async () => {
   try {
-    await dispatch(loginThunk({ username, password }));
-    navigate("/tuiter/profile");
+    const action = await dispatch(loginThunk({username, password}));
+    if (action.error) {
+      alert("The username or the password is not right, please try again.");
+    } else {
+      navigate("/tuiter/profile");
+    }
+
   } catch (e) {
     alert(e);
   }
- };
+};
+
+
  return ( 
    <div>
    <h1>Login Screen</h1>
