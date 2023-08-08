@@ -1,6 +1,6 @@
 import axios from "axios";
-//const SERVER_API_URL = process.env.REACT_APP_API_BASE; // get the URL to the remote API
-const SERVER_API_URL = 'https://tuiter-node-server-app-pv83.onrender.com/api'
+const SERVER_API_URL = process.env.REACT_APP_API_BASE; // get the URL to the remote API
+//const SERVER_API_URL = 'https://tuiter-node-server-app-pv83.onrender.com/api'
 const USERS_URL = `${SERVER_API_URL}/users`; // URL to auth controller
 
 const api = axios.create({ withCredentials: true }); // configure axios to support cookies
