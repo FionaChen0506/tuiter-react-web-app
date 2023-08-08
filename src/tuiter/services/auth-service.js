@@ -1,5 +1,5 @@
 import axios from "axios";
-const SERVER_API_URL = process.env.REACT_APP_SERVER_API_URL; // get the URL to the remote API
+const SERVER_API_URL = process.env.REACT_APP_API_BASE; // get the URL to the remote API
 const USERS_URL = `${SERVER_API_URL}/users`; // URL to auth controller
 
 const api = axios.create({ withCredentials: true }); // configure axios to support cookies
