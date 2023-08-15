@@ -19,8 +19,6 @@ import ProfileScreen from "./user/profile-screen";
 import LoginScreen from "./user/login-screen";
 import RegisterScreen from "./user/register-screen";
 import authReducer from "./reducers/auth-reducer";
-import ProtectedRoute
-  from "./user/protected-route";
 
 const store = configureStore({
    reducer: {who: whoReducer, tuits: tuitsReducer, user:  authReducer}});
@@ -46,8 +44,7 @@ function Tuiter() {
                   <Route path="/more" element={<MoreScreen />} />
                   <Route path="/login"    element={<LoginScreen />} />
                   <Route path="/register" element={<RegisterScreen />} />
-                  <Route path="/profile"  element={<ProtectedRoute>
- <ProfileScreen  /> </ProtectedRoute>} />
+                  <Route path="/profile"  element={<ProfileScreen  />} />
                   </Routes>
                </div>
                <div className="col-3">
