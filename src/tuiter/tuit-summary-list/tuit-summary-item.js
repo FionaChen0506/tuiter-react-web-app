@@ -19,7 +19,7 @@ const TuitSummaryItem = (
        <div>{tuit.handle} · {tuit.time}</div>
        {/* <div className="fw-bolder">{tuit.topic}</div>
        <div>{tuit.title}</div> */}
-       <div className="fw-bolder">{tuit.userName}</div>
+       <div className="fw-bolder">{tuit.username}</div>
        <div>{tuit.tuit}</div>
      </div>
      <div className="col-2">
